@@ -3,6 +3,7 @@ import { users } from "./../appwrite.config";
 import { ID, Query } from "node-appwrite";
 
 export const createUser = async (user: CreateUserParams) => {
+  console.log(user);
   try {
     const newUser = await users.create(
       ID.unique(),
